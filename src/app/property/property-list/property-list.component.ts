@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
+import { IProperty } from './IProperty.interfaz';
 
 @Component({
   selector: 'app-property-list',
@@ -8,7 +9,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class PropertyListComponent implements OnInit {
 
-  Products : any;
+  Products : Array<IProperty>;
 
   constructor(private productService: ProductService ) { }
 
